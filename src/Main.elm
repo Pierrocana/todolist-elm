@@ -56,7 +56,8 @@ type ToShow
     | TodoOnly
     | Both
 
-
+-- Changer le model ? 
+-- Ne plus utiliser les Array https://package.elm-lang.org/packages/elm/html/latest/Html-Keyed
 type alias Model =
     { show : ToShow
     , todos : Array TodoPoint
