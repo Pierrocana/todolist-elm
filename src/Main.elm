@@ -254,14 +254,15 @@ view model =
         _ =
             Debug.log "Value of model: " model
     in
-    div [ class "content" ]
-        [ div [ id "todoPoints" ] (Array.toList (Array.indexedMap (dispatchWiew model.show) model.todos))
-        , button [ onClick Add, disabled (isLastEmpty <| Array.toList <| model.todos) ] [ text "Add" ]
+    div [ class "demo-app" ]
+        [ h1 [] [ text "Todo-list" ]
         , div [ id "filters" ]
             [ button [ onClick GetOnlyDone ] [ text "Only done" ]
             , button [ onClick GetOnlyTodo ] [ text "Only to do" ]
             , button [ onClick GetBoth ] [ text "done & to do" ]
             ]
+        , div [ id "todoPoints" ] (Array.toList (Array.indexedMap (dispatchWiew model.show) model.todos))
+        , button [ onClick Add, disabled (isLastEmpty <| Array.toList <| model.todos) ] [ text "Add" ]
         ]
 
 

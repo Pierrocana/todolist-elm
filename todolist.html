@@ -3,16 +3,44 @@
 <head>
   <meta charset="UTF-8">
   <title>Main</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+  <link rel="stylesheet" href="todolist.css">
   <script src="main.js"></script>
 </head>
 
 <body>
   <div id="elm"></div>
+  <div id="explain-panel">
+    <a id="hide-button" href="#" onclick="toggle_panel('explain-content');">
+          .
+    </a>
+    <div id="explain-content">
+      <h2>Todolist développé en Elm</h2>
+      <p>L'application possède des fonctionnalités basiques d'une todolist:</p>
+      <ul>
+        <li>Ajouter une tâche</li>
+        <li>Les cocher et les décocher</li>
+        <li>Supprimer une tâche</li>
+        <li>Filtrer les tâches, faites et à faire</li>
+      </ul>
+      <p>Pour tester les possibilités de Elm d'autre fonctionnalités ont été ajouté:</p>
+      <ul>
+        <li>L'utilisateur ne peut pas ajouter de tâche si la dernière tâche ne contient aucune de description</li>
+        <li>L'utilisateur peut ajouter une tâche avec "+" de sont clavier</li>
+      </ul>
+    </div>
+  </div>
   <script>
   var app = Elm.Main.init({
     node: document.getElementById('elm')
   });
+  function toggle_panel(id) {
+    var x = document.getElementById(id);
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
   </script>
 </body>
 </html>

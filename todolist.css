@@ -1,0 +1,22 @@
+.demo-app {
+  float: left;
+  margin: 2em;
+  broder: 2em;
+  text-align: center;
+}
+
+#explain-panel {
+  float: right;
+}
+
+h1 {
+  color: orangered;
+}
+
+h2 {
+  color: orange;
+}
+
+li {
+  color: grey;
+}
