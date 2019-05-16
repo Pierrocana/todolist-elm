@@ -3,27 +3,22 @@
 }
 
 .toggle__input:checked ~ #explain-panel {
-  display: none;
+  
+  display: flex;
 }    
 .toggle__input:not(:checked) ~ #explain-panel {
-  display: flex;
+  display: none;
 }
 
 .toggle__input + label .toggle__less,
 .toggle__input:checked + label .toggle__more  {    
     display: none;
 }
+
 .toggle__input:checked + label .toggle__less {
     display: inline;
 }
 
-
-
-/*
-
-*/
-
-/* Toggle */
 
 .flex-container {
   display: flex;
