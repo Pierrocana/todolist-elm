@@ -19,6 +19,11 @@
     display: inline;
 }
 
+.toggle__input + label:hover {
+  color: rgb(92, 122, 255);
+}
+
+
 
 .flex-container {
   display: flex;
