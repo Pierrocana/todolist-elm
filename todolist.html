@@ -8,27 +8,41 @@
 </head>
 
 <body>
-  <div id="elm"></div>
-  <div id="explain-panel">
-    <a id="hide-button" href="#" onclick="toggle_panel('explain-content');">
-          .
-    </a>
-    <div id="explain-content">
-      <h2>Todolist développé en Elm</h2>
-      <p>L'application possède des fonctionnalités basiques d'une todolist:</p>
-      <ul>
-        <li>Ajouter une tâche</li>
-        <li>Les cocher et les décocher</li>
-        <li>Supprimer une tâche</li>
-        <li>Filtrer les tâches, faites et à faire</li>
-      </ul>
-      <p>Pour tester les possibilités de Elm d'autre fonctionnalités ont été ajouté:</p>
-      <ul>
-        <li>L'utilisateur ne peut pas ajouter de tâche si la dernière tâche ne contient aucune de description</li>
-        <li>L'utilisateur peut ajouter une tâche avec "+" de sont clavier</li>
-      </ul>
+  <div class="flex-container">
+    <div id="elm"></div>
+
+    <input type="checkbox" id="hide-button" class="toggle__input">
+    <label for="hide-button"><span class="toggle__less">?</span><span class="toggle__more">→</span></label>
+
+    <!--<a id="hide-button" href="#" onclick="toggle_panel('explain-content');">
+        ...
+    </a>-->
+
+
+    <div id="explain-panel">
+      <div id="explain-content">
+        <h2>Todolist développé en Elm</h2>
+        <p>L'application possède des fonctionnalités basiques d'une todolist:</p>
+        <ul>
+          <li>Ajouter une tâche</li>
+          <li>Les cocher et les décocher</li>
+          <li>Supprimer une tâche</li>
+          <li>Filtrer les tâches, faites et à faire</li>
+        </ul>
+        <p>Pour tester les possibilités de Elm d'autre fonctionnalités ont été ajouté:</p>
+        <ul>
+          <li>L'utilisateur ne peut pas ajouter de tâche si la dernière tâche ne contient aucune de description</li>
+          <li>L'utilisateur peut ajouter une tâche avec "+" de sont clavier</li>
+        </ul>
+
+        <p>L'application possède un état qui est affiché dans la console à chaque modifications</p>
+      </div>
     </div>
   </div>
+
+
+
+
   <script>
   var app = Elm.Main.init({
     node: document.getElementById('elm')

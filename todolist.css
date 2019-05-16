@@ -1,22 +1,50 @@
-.demo-app {
-  float: left;
-  margin: 2em;
-  broder: 2em;
-  text-align: center;
+.toggle__input {
+  display: none;
+}
+
+.toggle__input:checked ~ #explain-panel {
+  display: none;
+}    
+.toggle__input:not(:checked) ~ #explain-panel {
+  display: flex;
+}
+
+.toggle__input + label .toggle__less,
+.toggle__input:checked + label .toggle__more  {    
+    display: none;
+}
+.toggle__input:checked + label .toggle__less {
+    display: inline;
+}
+
+
+
+/*
+
+*/
+
+/* Toggle */
+
+.flex-container {
+  display: flex;
+  padding: 0.2em;
+  /*background-color: rgb(145, 103, 60);*/
 }
 
 #explain-panel {
-  float: right;
+  flex: 1;
 }
 
-h1 {
-  color: orangered;
+.demo-app {
+
+  text-align: center;
+  flex: 3;
 }
 
-h2 {
-  color: orange;
+#todoPoints > div:nth-child(odd) {
+  background-color: rgb(199, 199, 199);
 }
 
-li {
-  color: grey;
+#todoPoints > div > input[type=text] {
+  width: 70%;
 }
