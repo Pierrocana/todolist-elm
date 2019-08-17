@@ -6365,7 +6365,6 @@ var elm$core$Array$indexedMap = F2(
 	});
 var elm$core$Debug$log = _Debug_log;
 var elm$html$Html$h1 = _VirtualDom_node('h1');
-var elm$html$Html$Attributes$class = elm$html$Html$Attributes$stringProperty('className');
 var elm$html$Html$Attributes$disabled = elm$html$Html$Attributes$boolProperty('disabled');
 var elm$html$Html$Attributes$id = elm$html$Html$Attributes$stringProperty('id');
 var author$project$Main$view = function (model) {
@@ -6374,7 +6373,7 @@ var author$project$Main$view = function (model) {
 		elm$html$Html$div,
 		_List_fromArray(
 			[
-				elm$html$Html$Attributes$class('demo-app')
+				elm$html$Html$Attributes$id('demo-app')
 			]),
 		_List_fromArray(
 			[

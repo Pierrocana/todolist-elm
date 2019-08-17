@@ -254,7 +254,7 @@ view model =
         _ =
             Debug.log "Value of model: " model
     in
-    div [ class "demo-app" ]
+    div [ id "demo-app" ]
         [ h1 [] [ text "Todo-list" ]
         , div [ id "filters" ]
             [ button [ onClick GetOnlyDone ] [ text "Only done" ]
