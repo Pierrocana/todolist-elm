@@ -23,8 +23,6 @@
   color: rgb(92, 122, 255);
 }
 
-
-
 .flex-container {
   display: flex;
   padding: 0.2em;
@@ -36,7 +34,6 @@
 }
 
 #demo-app {
-
   text-align: center;
   flex: 3;
 }
@@ -46,5 +43,19 @@
 }
 
 #todoPoints > div > input[type=text] {
-  width: 70%;
+  width: 50%;
+}
+
+@media screen and (max-width: 775px) {
+  .flex-container {
+    flex-direction: column;
+    padding: 0.2em;
+    text-align: center;
+  }
+  .toggle__less {
+    font-size: 175%;
+  }
+  .toggle__more {
+    font-size: 175%;
+  }
 }
