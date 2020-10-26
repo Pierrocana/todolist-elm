@@ -1,27 +1,3 @@
-.toggle__input {
-  display: none;
-}
-
-.toggle__input:checked ~ #explain-panel {
-  
-  display: flex;
-}    
-.toggle__input:not(:checked) ~ #explain-panel {
-  display: none;
-}
-
-.toggle__input + label .toggle__less,
-.toggle__input:checked + label .toggle__more  {    
-    display: none;
-}
-
-.toggle__input:checked + label .toggle__less {
-    display: inline;
-}
-
-.toggle__input + label:hover {
-  color: rgb(92, 122, 255);
-}
 
 .flex-container {
   display: flex;
